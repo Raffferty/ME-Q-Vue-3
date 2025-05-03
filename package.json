@@ -1,5 +1,5 @@
 {
-  "name": "me-cuarrel-web",
+  "name": "me-quarrel-web",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -31,6 +31,7 @@
     "jiti": "^2.4.2",
     "jsdom": "^26.0.0",
     "npm-run-all2": "^7.0.2",
+    "sass": "^1.87.0",
     "typescript": "~5.8.0",
     "vite": "^6.2.4",
     "vite-plugin-vue-devtools": "^7.7.2",
