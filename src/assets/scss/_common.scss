@@ -1,4 +1,52 @@
+html,
+body,
 #app {
+  height: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container.sm {
+  max-width: 1140px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a.text-primary {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-primary);
+  transition: all 0.2s linear;
+}
+
+a.text-primary:hover {
+  color: var(--color-secondary);
+}
+
+a.text-primary:active {
+  color: var(--color-tertiary-1);
+}
+
+.danger-color {
+  color: var(--error-color);
+}
+
+.divider-horizontal {
+  height: 2px;
+  width: 100%;
+  margin: 2rem 0;
+  background-color: var(--color-tertiary-3);
+}
+
+//-- Vue settings
+
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -30,4 +78,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */

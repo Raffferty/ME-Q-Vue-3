@@ -1,0 +1,97 @@
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  padding: 8px 18px;
+
+  color: var(--vt-c-white);
+  background-color: var(--color-primary);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 2px var(--color-primary);
+  border-radius: var(--border-radius-sm);
+
+  font-family: 'Outfit';
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  outline: none;
+
+  cursor: pointer;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  user-select: none;
+}
+
+.primary-button.xl {
+  width: 15rem;
+}
+
+.primary-button:hover,
+.primary-button:active {
+  color: var(--color-primary);
+  background-color: var(--vt-c-white);
+  text-decoration: none;
+}
+
+.primary-button[disabled] {
+  cursor: default;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.primary-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  padding: 8px 18px;
+
+  color: var(--color-primary);
+  background-color: var(--vt-c-white);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 2px var(--color-primary);
+  border-radius: var(--border-radius-sm);
+
+  font-family: 'Outfit';
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: all 0.2s linear;
+  user-select: none;
+  outline: none;
+}
+
+.secondary-button.xl {
+  width: 15rem;
+}
+
+.secondary-button:hover {
+  color: var(--vt-c-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+}
+
+.secondary-button[disabled] {
+  cursor: default;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.secondary-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

@@ -1,0 +1,136 @@
+@use 'variables' as *;
+
+:root {
+  --primary-color: #4a148c;
+  --primary-dark: #3a1070;
+  --primary-light: #7c43bd;
+  --secondary-color: #ff6f00;
+  --text-color: #333;
+  --light-text: #666;
+  --background-color: #f5f5f5;
+  --border-color: #ddd;
+  --success-color: #388e3c;
+  --warning-color: #f57c00;
+  --error-color: #d32f2f;
+  --info-color: #0288d1;
+
+  --color-white: #fff;
+  --color-white-rgba-40: rgba(255, 255, 255, 0.4);
+  --color-white-rgba-80: rgba(255, 255, 255, 0.8);
+  --color-black: #000;
+  --color-black-rgba-10: rgba(0, 0, 0, 0.1);
+  --color-black-rgba-20: rgba(0, 0, 0, 0.2);
+  --color-primary-dark: #00307B;
+  --color-primary: #{$color-primary};
+  --color-primary-rgba-20: rgba(0, 83, 212, 0.2);
+  --color-primary-rgba-40: rgba(0, 83, 212, 0.4);
+  --color-secondary: #{$color-secondary};
+  --color-secondary-light: #4C91FB;
+  --color-tertiary-1: #66a3ff;
+  --color-tertiary-2: #99c2ff;
+  --color-tertiary-3: #cce0ff;
+  --color-tertiary-3-transparent-40: rgba(204, 224, 255, 0.4);
+  --color-tertiary-3-transparent: rgba(204, 224, 255, 0.5);
+  --color-tertiary-3-transparent-50: rgba(204, 224, 255, 0.5);
+  --color-tertiary-4: #e6f4ff;
+  --color-tertiary-4-transparent-0: rgba(230, 244, 255, 0);
+  --color-tertiary-4-transparent-80: rgba(230, 244, 255, 0.8);
+  --color-tertiary-5: #F5F9FF;
+  --color-success: #26C867;
+  --color-success-lighten: #D4F7E2;
+  --color-warning: #ED9200;
+  --color-warning-lighten: #FFE2B2;
+  --color-remove: #e40505;
+  --color-remove-rgba-20: rgba(228, 5, 5, 0.2);
+  --color-remove-dark: #B40404;
+  --color-grey-1: #505254;
+  --color-grey-1-rgba-10: rgba(80, 82, 84, 0.1);
+  --color-grey-1-rgba-40: rgba(80, 82, 84, 0.4);
+  --color-grey-1-rgba-80: rgba(80, 82, 84, 0.8);
+  --color-grey-2: #9A9D9F;
+  --color-grey-2-rgba-40: rgba(154, 157, 159, 0.4);
+  --color-grey-3: #999999;
+
+  --text-color-landing-special: #00307B;
+  --text-color-landing-primary: #000000;
+  --text-color-landing-secondary: var(--color-grey-1);
+  --landing-font-family-primary: 'Outfit';
+  --landing-font-family-secondary: 'RedHatDisplay';
+
+  --body-background-color: #FFFFFF;
+  --body-background-color-transparent: rgba(255, 255, 255, 0);
+
+  --color-tab-bg: var(--color-tertiary-3);
+  --color-tab-btn-color: var(--color-primary-dark);
+  --color-tab-btn-active-bg: #fff;
+
+  --box-shadow-inset-base: inset 2px 2px 8px 0px var(--color-black-rgba-10);
+  --box-shadow-base: 0px 4px 8px 0px var(--color-black-rgba-20);
+}
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-rgba-40: rgba(255, 255, 255, 0.4);
+  --vt-c-black: #000000;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  /*--vt-c-black: #181818;*/
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --vt-c-gray: #898D91;
+  --vt-c-gray-rgba-10: var(--color-grey-1-rgba-10);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+
+  --border-radius-min: 4px;
+  --border-radius-sm: 8px;
+  --border-radius: 10px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 20px;
+  --border-radius-xxl: 40px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #{$color-primary--dark};
+    --color-secondary: #{$color-secondary--dark};
+
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}

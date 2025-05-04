@@ -1,0 +1,16 @@
+@mixin text-overflow() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin readonly {
+  cursor: default;
+  pointer-events: none;
+  user-select: auto;
+}
+
+@mixin disabled {
+  opacity: 0.4;
+  @include readonly;
+}

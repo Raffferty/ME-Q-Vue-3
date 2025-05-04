@@ -1,0 +1,29 @@
+h1, .h1 {
+  font: 600 48px 'Outfit';
+  color: var(--text-color-landing-special);
+  margin-bottom: 30px;
+}
+
+h2, .h2 {
+  font: 600 40px 'Outfit';
+  color: var(--text-color-landing-special);
+  margin-bottom: 30px;
+}
+
+h3, .h3 {
+  font: 600 26px 'Outfit';
+  color: var(--text-color-landing-special);
+  margin-bottom: 30px;
+}
+
+h4, .h4 {
+  font: 500 24px 'Outfit';
+  line-height: 32px;
+  color: var(--vt-c-black);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: var(--text-color-landing-secondary);
+  margin-bottom: 30px;
+}
